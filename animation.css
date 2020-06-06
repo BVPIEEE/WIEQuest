@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    z-index: 5
 }
 header {
     /*background-color:rgba(33, 33, 33, 0.9);*/
@@ -14,6 +15,7 @@ header {
 h2{
     margin-top: 30px;
     text-align: center;
+    z-index: 5
 }
 header h2{
     font-size: 22px;
@@ -21,10 +23,12 @@ header h2{
     padding: 10px 0;
     width: 80%;
     text-align: center;
+    z-index: 5;
 }
 header a, a:visited {
     text-decoration:none;
     color:#fcfcfc;
+    z-index: 5;
 }
 
 @keyframes move-twink-back {
@@ -69,27 +73,28 @@ header a, a:visited {
   bottom:0;
   width:100%;
   height:100%;
-  display:animation: backwards;
+  /*display:animation: backwards;*/
+  z-index: 2
 }
 
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index:0;
-  display:animation: backwards;
-  position: fixed;
+  /*display:animation: backwards;*/
+  z-index: 2
 }
 
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:0;
-  position: fixed;
+  z-index:1;
 
   -moz-animation:move-twink-back 200s linear infinite;
   -ms-animation:move-twink-back 200s linear infinite;
   -o-animation:move-twink-back 200s linear infinite;
   -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
-  display:animation: backwards;
+  /*display:animation: backwards;*/
+  z-index: 2
 }
 
 ./*clouds{
