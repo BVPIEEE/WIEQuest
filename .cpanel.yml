@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bvpifcjd/public_html/wiequest
+    - export DEPLOYPATH=/home/bvpifcjd/public_html/wiequest 
     - /bin/cp -R * $DEPLOYPATH
  
